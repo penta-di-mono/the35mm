@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<title>the35mm | PHOTOGRAPHY & CULTURE</title>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+	<script src="js/script.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+
+	<link rel="stylesheet" href="css/basic.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+
+</head>
+<body>
+	<header>
+		<!-- 로고 -->
+		<div class="header_wrap inner_box clear">
+			<h1 class="logo"><span>PHOTOGRAPHY & CULTURE</span></h1>
+
+			<!-- 고객을 위한 메뉴 -->
+			<div class="user_menu">
+				<!-- 로그인 및 회원가입 -->
+				<ul class="user_joinus aside offTbnav"> <!-- offTbnav -->
+					<li class="aft_bar"><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+				</ul>
+				<!-- 장바구니,마이페이지,고객센터 -->
+				<div class="aside_set offTbnav"> <!-- offTbnav -->
+					<ul class="user_mypage aside">
+						<li class="aft_bar"><a href="#">장바구니</a></li>
+						<li class="aft_bar"><a href="#">주문내역</a></li>
+						<li><a href="#">고객센터</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 검색 -->
+			<div class="user_srch"> <!-- mb_mode -->
+				<label class="hdd" for="search">검색</label>
+				<input type="text" id="search" name="search" placeholder="찾는 제품이 있으신가요?">
+			</div>
+
+			<!-- 햄버거 -->
+			<div class="mb_nav_btn forTb"> <!-- mb_mode -->
+				<span class="ham_fir"></span>
+				<span class="ham_line"></span>
+				<span class="ham_line"></span>
+			</div>
+
+			<!-- 닫기 버튼 -->
+			<div class="forTb closepop offTbnav">	<!-- offTbnav -->
+				<p class="close"><img src="./img/tablet/close.png" alt="닫기"></p>
+			</div>
+		</div>
+		<!-- 네비게이션 -->
+			<nav class="pc_nav"> <!-- mb_mode -->
+				<ul class="main_menu inner_box">
+					<li class="menu_first"><a href="#">about the35mm</a></li>
+					<li class="menu_more">
+						<a href="#">메뉴 한 눈에 보기</a>
+						<div class="sub_depth2_bg oneclick">
+							<ul class="oneclick_menu greeting">
+								<li><a href="#">안녕하세요<br>the35mm입니다.</a></li>
+							</ul>
+							<ul class="oneclick_menu film_lab">
+								<li><a href="#">현상·스캔 - 35mm / color</a></li>
+								<li><a href="#">현상·스캔 - 35mm / color / 대용량</a></li>
+								<li><a href="#">현상·스캔 - 35mm / wide</a></li>
+								<li><a href="#">현상·스캔 - 35mm / half</a></li>
+								<li><a href="#">현상·스캔 - 120 / color</a></li>
+								<li><a href="#">스캔 - Only Scanning</a></li>
+								<li><a href="#">TIFF스캔 - Only Scanning</a></li>
+							</ul>
+							<ul class="oneclick_menu film_kind">
+								<li><a href="#">Only 35mm</a></li>
+								<li><a href="#">35mm</a></li>
+								<li><a href="#">120</a></li>
+								<li><a href="#">110</a></li>
+								<li><a href="#">대형필름</a></li>
+								<li><a href="#">특수필름</a></li>
+								<li><a href="#">즉석필름</a></li>
+							</ul>
+
+							<ul class="oneclick_menu camera_kind">
+								<li><a href="#">FILM CAMERA</a></li>
+								<li><a href="#">TOY / LOMO</a></li>
+								<li><a href="#">LENS </a></li>
+							</ul>
+
+							<ul class="oneclick_menu instant_kind">
+								<li><a href="#">POLAROID</a></li>
+								<li><a href="#">FUJI INSTAX</a></li>
+								<li><a href="#">LOMOGRAPHY</a></li>
+							</ul>
+
+							<ul class="oneclick_menu accessory">
+								<li><a href="#">카메라 악세서리</a></li>
+								<li><a href="#">촬영 보조 악세서리</a></li>
+								<li><a href="#">보관 및 관리</a></li>
+								<li><a href="#">기타 악세서리</a></li>
+							</ul>
+
+							<ul class="oneclick_menu goods35">
+								<li><a href="#">디지털 악세서리</a></li>
+								<li><a href="#">서적</a></li>
+								<li><a href="#">패션</a></li>
+								<li><a href="#">음방</a></li>
+								<li><a href="#">리빙</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu_more"><a href="#">단골사진관(FILM LAB)</a></li>
+					<li class="menu_more">
+						<a href="#">필름</a>
+						<div class="sub_depth2_bg">
+							<ul class="sub_depth2_wrap">
+								<li class="sub_dep2"><a href="#">Only35mm</a></li>
+								<li class="sub_dep2">
+									<a href="#">35mm</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">흑백</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">컬러</a></li>
+										<li class="sub_dep3"><a href="#">슬라이드</a></li>
+									</ul>
+								</li>
+								<li class="sub_dep2">
+									<a href="#">120</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">흑백</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">컬러</a></li>
+										<li class="sub_dep3"><a href="#">슬라이드</a></li>
+									</ul>
+								</li>
+								<li class="sub_dep2">
+									<a href="#">110</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">흑백</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">컬러</a></li>
+										<li class="sub_dep3"><a href="#">슬라이드</a></li>
+									</ul>
+								</li>
+								<li class="sub_dep2">
+									<a href="#">대형필름</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">흑백</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">컬러</a></li>
+										<li class="sub_dep3"><a href="#">슬라이드</a></li>
+									</ul>
+								</li>
+								<li class="sub_dep2">
+									<a href="#">특수필름</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">영화용 필름</a></li>
+										<li class="sub_dep3"><a href="#">특수효과 필름</a></li>
+									</ul>
+								</li>
+								<li class="sub_dep2">
+									<a href="#">즉석필름</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">sx-70,원스텝</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">600전용</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">랜드스펙트라</a></li>
+										<li class="sub_dep3"><a href="#">인스탁스</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li  class="menu_more">
+						<a href="#">카메라</a>
+						<div class="sub_depth2_bg">
+							<ul class="sub_depth2_wrap">
+								<li class="sub_dep2">
+									<a href="#">필름 카메라</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">자동</a></li>
+										<li class="sub_dep3"><a href="#">수동</a></li>
+									</ul>
+								</li>
+								<li class="sub_dep2">
+									<a href="#">토이/로모 카메라</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">토이</a></li>
+										<li class="sub_dep3"><a href="#">로모</a></li>
+									</ul>
+								</li>
+								<li class="sub_dep2">
+									<a href="#">렌즈</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">컨버터</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">니콘</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">캐논</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">미놀타</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">펜탁스</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">라이카</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">콘탁스</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">핫셀</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">야시카</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">올림푸스</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">M42</a></li>
+										<li class="sub_dep3"><a href="#">ETC</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li  class="menu_more">
+						<a href="#">인스턴스 카메라</a>
+						<div class="sub_depth2_bg">
+							<ul class="sub_depth2_wrap">
+								<li class="sub_dep2">
+									<a href="#">폴라로이드</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">sx-70 시리즈</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">land 시리즈</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">원스텝</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">600시리즈</a></li>
+										<li class="sub_dep3"><a href="#">스펙트라</a></li>
+									</ul>
+								</li>
+								<li class="sub_dep2"><a href="#">후지 인스탁스</a></li>
+								<li class="sub_dep2"><a href="#">로모인스턴트카메라</a></li>
+							</ul>
+						</div>
+					</li>
+					<li  class="menu_more">
+						<a href="#">악세사리</a>
+						<div class="sub_depth2_bg">
+							<ul class="sub_depth2_wrap">
+								<li class="sub_dep2">
+									<a href="#">카메라 악세사리</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">후드</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">렌즈캡</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">필터</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">배터리</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">플래시</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">노출</a></li>
+										<li class="sub_dep3"><a href="#">셔터</a></li>
+									</ul>
+								</li>
+
+								<li class="sub_dep2">
+									<a href="#">촬영 악세사리</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">충전기</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">가방</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">케이스</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">스트랩</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">핸드그립</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">삼각대</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">셀카봉</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">커스텀 스킨</a></li>
+										<li class="sub_dep3"><a href="#">커버</a></li>
+									</ul>
+								</li>
+
+								<li class="sub_dep2">
+									<a href="#">보관 및 관리</a>
+									<ul class="sub_dep3_wrap clear">
+										<li class="sub_dep3 aft_bar"><a href="#">클리닝</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">청소</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">보관</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">방수</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">보호</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">메모리</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">저장장치</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">현상</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">인화</a></li>
+										<li class="sub_dep3 aft_bar"><a href="#">프린터</a></li>
+										<li class="sub_dep3"><a href="#">스캐너</a></li>
+									</ul>
+								</li>
+
+								<li class="sub_dep2"><a href="#">기타</a></li>
+							</ul>
+						</div>
+					</li>
+					<li  class="menu_more">
+						<a href="#">리빙·굿즈</a>
+						<div class="sub_depth2_bg">
+							<ul class="sub_depth2_wrap">
+								<li class="sub_dep2"><a href="#">핸드폰/PC 악세서리</a></li>
+								<li class="sub_dep2"><a href="#">서적</a></li>
+								<li class="sub_dep2"><a href="#">패션</a></li>
+								<li class="sub_dep2"><a href="#">음반</a></li>
+								<li class="sub_dep2"><a href="#">리빙</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- 태블릿 네비게이션 -->
+			<nav class="tb_nav forTb offTbnav">
+				<ul class="main_menu inner_box">
+					<li  class="menu_fir"><a href="#">단골사진관(FILM LAB)</a></li>
+					<li  class="menu_more">
+						<a href="#">필름</a>
+						<ul class="sub_depth2_wrap">
+							<li class="sub_dep2"><a href="#">Only35mm</a></li>
+							<li class="sub_dep2">
+								<a href="#">35mm</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">흑백</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">컬러</a></li>
+									<li class="sub_dep3"><a href="#">슬라이드</a></li>
+								</ul>
+							</li>
+							<li class="sub_dep2">
+								<a href="#">120</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">흑백</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">컬러</a></li>
+									<li class="sub_dep3"><a href="#">슬라이드</a></li>
+								</ul>
+							</li>
+							<li class="sub_dep2">
+								<a href="#">110</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">흑백</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">컬러</a></li>
+									<li class="sub_dep3"><a href="#">슬라이드</a></li>
+								</ul>
+							</li>
+							<li class="sub_dep2">
+								<a href="#">대형</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">흑백</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">컬러</a></li>
+									<li class="sub_dep3"><a href="#">슬라이드</a></li>
+								</ul>
+							</li>
+							<li class="sub_dep2">
+								<a href="#">특수</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">영화용 필름</a></li>
+									<li class="sub_dep3"><a href="#">특수효과 필름</a></li>
+								</ul>
+							</li>
+							<li class="sub_dep2">
+								<a href="#">즉석</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">sx-70,원스텝</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">600전용</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">랜드스펙트라</a></li>
+									<li class="sub_dep3"><a href="#">인스탁스</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li  class="menu_more">
+						<a href="#">카메라</a>
+						<ul class="sub_depth2_wrap">
+							<li class="sub_dep2">
+								<a href="#">필름 카메라</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">자동</a></li>
+									<li class="sub_dep3"><a href="#">수동</a></li>
+								</ul>
+							</li>
+							<li class="sub_dep2">
+								<a href="#">토이/로모 카메라</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">토이</a></li>
+									<li class="sub_dep3"><a href="#">로모</a></li>
+								</ul>
+							</li>
+							<li class="sub_dep2">
+								<a href="#">렌즈</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">컨버터</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">니콘</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">캐논</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">미놀타</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">펜탁스</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">라이카</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">콘탁스</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">핫셀</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">야시카</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">올림푸스</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">M42</a></li>
+									<li class="sub_dep3"><a href="#">ETC</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li  class="menu_more">
+						<a href="#">인스턴스 카메라</a>
+						<ul class="sub_depth2_wrap">
+							<li class="sub_dep2">
+								<a href="#">폴라로이드</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">sx-70 시리즈</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">land 시리즈</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">원스텝</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">600시리즈</a></li>
+									<li class="sub_dep3"><a href="#">스펙트라</a></li>
+								</ul>
+							</li>
+							<li class="sub_dep2"><a href="#">후지 인스탁스</a></li>
+							<li class="sub_dep2"><a href="#">로모인스턴트카메라</a></li>
+						</ul>
+					</li>
+					<li  class="menu_more">
+						<a href="#">악세사리</a>
+						<ul class="sub_depth2_wrap">
+							<li class="sub_dep2">
+								<a href="#">카메라 악세사리</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">후드</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">렌즈캡</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">필터</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">배터리</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">플래시</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">노출</a></li>
+									<li class="sub_dep3"><a href="#">셔터</a></li>
+								</ul>
+							</li>
+
+							<li class="sub_dep2">
+								<a href="#">촬영 악세사리</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">충전기</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">가방</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">케이스</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">스트랩</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">핸드그립</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">삼각대</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">셀카봉</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">커스텀 스킨</a></li>
+									<li class="sub_dep3"><a href="#">커버</a></li>
+								</ul>
+							</li>
+
+							<li class="sub_dep2">
+								<a href="#">보관 및 관리</a>
+								<ul class="sub_dep3_wrap clear">
+									<li class="sub_dep3 aft_bar"><a href="#">클리닝</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">청소</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">보관</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">방수</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">보호</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">메모리</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">저장장치</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">현상</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">인화</a></li>
+									<li class="sub_dep3 aft_bar"><a href="#">프린터</a></li>
+									<li class="sub_dep3"><a href="#">스캐너</a></li>
+								</ul>
+							</li>
+
+							<li class="sub_dep2"><a href="#">기타</a></li>
+						</ul>
+					</li>
+					<li  class="menu_more">
+						<a href="#">리빙·굿즈</a>
+						<ul class="sub_depth2_wrap">
+							<li class="sub_dep2"><a href="#">핸드폰/PC 악세서리</a></li>
+							<li class="sub_dep2"><a href="#">서적</a></li>
+							<li class="sub_dep2"><a href="#">패션</a></li>
+							<li class="sub_dep2"><a href="#">음반</a></li>
+							<li class="sub_dep2"><a href="#">리빙</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+	</header>
+
+	<main>
+		<!-- 메인 이미지 슬라이드 -->
+		<section id="mainImg" class="img_slide">
+			<h2 class="hdd">메인 이미지 슬라이드</h2>
+			<!-- PC버전 -->
+			<div class="img_frm">
+				<!-- 이미지 -->
+				<ul class="img_list">
+					<li>
+						<a href="#">
+							<span class="hdd">이미지1</span>
+							<img src="./img/slide_img_01.jpg" alt="이미지1">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="hdd">이미지2</span>
+							<img src="./img/slide_img_02.jpg" alt="이미지2">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="hdd">이미지3</span>
+							<img src="./img/slide_img_03.jpg" alt="이미지3">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="hdd">이미지4</span>
+							<img src="./img/slide_img_04.jpg" alt="이미지4">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="hdd">이미지5</span>
+							<img src="./img/slide_img_05.jpg" alt="이미지5">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="hdd">이미지6</span>
+							<img src="./img/slide_img_06.jpg" alt="이미지6">
+						</a>
+					</li>
+				</ul>
+
+				<!-- 인디케이터 -->
+				<!-- <ul class="indicator">
+					<li class="on aft_blank"><a href="#"></a></li>
+					<li class="aft_blank"><a href="#"></a></li>
+					<li class="aft_blank"><a href="#"></a></li>
+					<li class="aft_blank"><a href="#"></a></li>
+					<li class="aft_blank"><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul> -->
+			</div>
+		</section>
+
+		<!-- 카메라와 렌즈는 35mm에서 준비하세요 -->
+		<section id="sec01" class="already_35">
+			<!-- 타이틀 -->
+			<div class="title inner_box clear">
+				<div class="tit_left">
+					<p class="sub_tit">사진은 마음으로 찍지만</p>
+					<h2 class="main_tit">카메라와 렌즈는 the35mm에서 준비하세요.</h2>
+				</div>
+				<div class="tit_right">
+					<hr>
+				</div>
+			</div>
+			<!-- 내용 -->
+			<div class="content inner_box clear">
+				<article class="sec01_already manual_camera">
+					<p class="circle_img"><img src="./img/film_camera_01_pentax.png" alt="수동카메라"></p>
+					<h3 class="mini_tit">수동 필름 카메라</h3>
+					<p>manual film camera</p>
+					<span class="move_to">바로가기<strong class="arrow_right"></strong></span>
+				</article>
+				<article class="sec01_already auto_camera">
+					<p class="circle_img"><img src="./img/film_camera_02_minolta.png" alt="자동카메라"></p>
+					<h3 class="mini_tit">자동 필름 카메라</h3>
+					<p>automatic film camera</p>
+					<span class="move_to">바로가기<strong class="arrow_right"></strong></span>
+				</article>
+				<article class="sec01_already lens">
+					<p class="circle_img"><img src="./img/film_camera_03_samyang.png" alt="렌즈"></p>
+					<h3 class="mini_tit">다양한 렌즈</h3>
+					<p>lens</p>
+					<span class="move_to">바로가기<strong class="arrow_right"></strong></span>
+				</article>
+			</div>
+		</section>
+
+		<!-- 다양한카메라 -->
+		<section id="sec02" class="vr_camera">
+			<!-- 타이틀 -->
+			<div class="title inner_box">
+				<div class="tit_left">
+					<p class="sub_tit">꼭 전문가처럼 찍지 않아도 좋아요.</p>
+					<h2 class="main_tit">the35mm엔 이만큼 다양한 카메라가 있으니까요.</h2>
+				</div>
+				<div class="tit_right">
+					<hr>
+				</div>
+			</div>
+			<!-- 카메라 리스트 -->
+			<div class="cmr_li inner_box">
+				<ul class="camera_list">
+					<li><a href="#"><span>토이카메라 / 로모카메라</span></a></li>
+					<li><a href="#"><span>보케 필터</span></a></li>
+					<li><a href="#"><span>일회용 카메라</span></a></li>
+					<li><a href="#"><span>워터프루프 카메라</span></a></li>
+					<li><a href="#"><span>인스턴트 카메라</span></a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- 다양하고 희귀한 필름 -->
+		<section id="sec03" class="vr_film">
+			<!-- 타이틀 -->
+			<div class="title inner_box">
+				<div class="tit_left">
+					<p class="sub_tit">이렇게 재미있는 필름들이 많답니다.</p>
+					<h2 class="main_tit">세상의 모든 필름, the35mm에서 만나보세요.</h2>
+				</div>
+				<div class="tit_right">
+					<hr>
+				</div>
+			</div>
+
+			<!-- 필름 슬라이드 -->
+			<div class="list_frame num01">
+				<div class="film_list_bg">
+					<ul class="film_list">
+						<li>
+							<a href="#">
+								<span class="hdd film_name">AnaloueLover - Smoky</span>
+								<img src="./img/film_01_analoguelover_smoky.png" alt="아날로그러버-스모키">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/film_02_cinestill_50d.png" alt="씨네스틸">
+								<span class="hdd film_name">CineStill - 50D</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/film_03_filmneverdie.png" alt="필름네버다이-이로">
+								<span class="hdd film_name">FilmNeverDie - IRO400</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/film_04_kono.png" alt="코노필름-몬순">
+								<span class="hdd film_name">KONO Film - MONSOON</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/film_05_revolog.png" alt="리볼그-컬러">
+								<span class="hdd film_name">REVOLOG - KOLOR</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="more inner_box">
+				<p class="more_con">더 많은 필름보기<strong class="arrow_right black"></strong></p>
+			</div>
+		</section>
+
+		<!-- 출사준비 -->
+		<section id="sec04" class="goingout">
+			<!-- 타이틀 -->
+			<div class="title inner_box">
+				<div class="tit_left">
+					<p class="sub_tit">드디어 기다리던 거리두기 해제!</p>
+					<h2 class="main_tit">출사 준비하세요! the35mm가 도와드릴게요.</h2>
+				</div>
+				<div class="tit_right">
+					<hr>
+				</div>
+			</div>
+
+			<!-- 출사 준비물 -->
+			<div class="prdt_wrap inner_box">
+				<ul class="prdt_list">
+					<li class="prdt_cont">
+						<div class="prdt_bg">
+							<p class="prdt_sub_tit">든든하게 챙겨요!</p>
+							<h4 class="prdt_main_tit">가방·파우치</h4>
+							<img class="product pouch" src="./img/goingout_01_pouch.png" alt="가방·파우치">
+						</div>
+					</li>
+
+					<li class="prdt_cont">
+						<div class="prdt_bg">
+							<p class="prdt_sub_tit">좋은 사진을 위해</p>
+							<h4 class="prdt_main_tit">삼각대·거치대</h4>
+							<img class="product tripod01" src="./img/goingout_02_Tripod01.png" alt="삼각대·거치대">
+							<img class="product tripod02" src="./img/goingout_02_Tripod02.png" alt="삼각대·거치대">
+						</div>
+					</li>
+
+					<li class="prdt_cont">
+						<div class="prdt_bg">
+							<p class="prdt_sub_tit">여러모로 필요해요</p>
+							<h4 class="prdt_main_tit">필름 케이스</h4>
+							<img class="product filmcase" src="./img/goingout_03_case.png" alt="필름 케이스">
+						</div>
+					</li>
+
+					<li class="prdt_cont">
+						<div class="prdt_bg">
+							<p class="prdt_sub_tit">카메라 놓치지 말아요</p>
+							<h4 class="prdt_main_tit">카메라 스트랩</h4>
+							<img class="product strap" src="./img/goingout_04_strap.png" alt="카메라 스트랩">
+						</div>
+					</li>
+
+					<li class="prdt_cont">
+						<div class="prdt_bg">
+							<p class="prdt_sub_tit">뿌연것은 컨셉인가요</p>
+							<h4 class="prdt_main_tit">클리닝 제품</h4>
+							<img class="product clearing" src="./img/goingout_05_clearing.png" alt="클리닝 제품">
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="more inner_box">
+				<p class="more_con">더 많은 필름보기<strong class="arrow_right black"></strong></p>
+			</div>
+		</section>
+
+		<!-- 35mm서비스들 -->
+		<section id="sec05" class="service">
+			<!-- 타이틀 -->
+			<div class="title inner_box">
+				<div class="tit_left">
+					<p class="sub_tit">the35mm의 서비스는 끝이없어요.</p>
+					<h2 class="main_tit">the35mm에서 만날 수 있는 서비스들을 확인하세요.</h2>
+				</div>
+				<div class="tit_right">
+					<hr>
+				</div>
+			</div>
+
+			<div class="service_list inner_box">
+				<ul class="serv_wrap">
+					<li class="serv_list aft_blank">
+						<div class="serv_cont_wrap">
+							<p class="serv_sub_tit">아날로그 감성 그대로</p>
+							<h4 class="serv_main_tit">단골사진관(현상·스캔)</h4>
+							<span class="serv_img"></span>
+							<span class="shortcut">바로가기</span>
+						</div>
+					</li>
+
+					<li class="serv_list aft_blank">
+						<div class="serv_cont_wrap">
+							<p class="serv_sub_tit">전국어디서나</p>
+							<h4 class="serv_main_tit">카메라·렌즈 렌탈</h4>
+							<span class="serv_img"></span>
+							<span class="shortcut">바로가기</span>
+						</div>
+					</li>
+
+					<li class="serv_list aft_blank">
+						<div class="serv_cont_wrap">
+							<p class="serv_sub_tit">좋은 사람 만나렴</p>
+							<h4 class="serv_main_tit">매입·매각 상담</h4>
+							<span class="serv_img"></span>
+							<span class="shortcut">바로가기</span>
+						</div>
+					</li>
+
+					<li class="serv_list">
+						<div class="serv_cont_wrap">
+							<p class="serv_sub_tit">어디가 아픈거니</p>
+							<h4 class="serv_main_tit">수리·점검 신청</h4>
+							<span class="serv_img"></span>
+							<span class="shortcut">바로가기</span>
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+		</section>
+
+		<!-- the35mm의 다양한 활동들 -->
+		<section id="sec06" class="channel35 clear">
+			<h2 class="hdd">삼삼오오 활동들</h2>
+			<!-- 즐겨보세요! -->
+			<article class="play35 inner_box clear">
+				<div class="inner_box">
+					<h2 class="main_tit">즐겨보세요! PLAY 35mm</h2>
+					<ul class="play_wrap">
+						<!-- 삼삼오오 문화생활 -->
+						<li class="ch_list aft_blank">
+							<div class="ch_cont_list">
+								<p class="ch_img"></p>
+								<h4 class="ch_tit">CHANNEL 1</h4>
+								<span class="ch_name">삼삼오오 문화생활</span>
+							</div>
+						</li>
+
+						<!-- 인스타그램 -->
+						<li class="ch_list aft_blank">
+							<div class="ch_cont_list">
+								<p class="ch_img"></p>
+								<h4 class="ch_tit">CHANNEL 2</h4>
+								<span class="ch_name">the35mm 인스타그램</span>
+							</div>
+						</li>
+
+						<!-- 이벤트 -->
+						<li class="ch_list">
+							<div class="ch_cont_list">
+								<p class="ch_img"></p>
+								<h4 class="ch_tit">CHANNEL 3</h4>
+								<span class="ch_name">the35mm 이벤트</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</article>
+
+			<!-- 다양한 팬시와 굿즈 -->
+			<article class="goods inner_box">
+				<p class="goods_bg"></p>
+				<div class="badge_wrap inner_box">
+					<h2 class="main_tit">카메라와 함께하는 다양한 팬시와 굿즈들을 만나보세요</h2>
+					<a href="#" class="shortcut">바로가기</a>
+					<img class="pinbadge camera01" src="./img/pin_01_camera_01.png" alt="카메라">
+					<img class="pinbadge camera02" src="./img/pin_02_camera_02.png" alt="카메라">
+					<img class="pinbadge film01" src="./img/pin_03_film_01.png" alt="필름">
+					<img class="pinbadge film02" src="./img/pin_04_film_02.png" alt="필름">
+				</div>
+			</article>
+
+			<!-- 리사이클 캠페인 -->
+			<article class="campain inner_box">
+				<p class="campain_bg"></p>
+				<div class="campain_wrap inner_box">
+					<h2 class="main_tit">환경을 생각하는 the35mm의 박스 리사이클 캠페인</h2>
+					<a href="#" class="shortcut">바로가기</a>
+					<div class="boxswrap">
+						<img class="box rebox01 aft_blank" src="./img/campain_box.png" alt="박스">
+						<img class="box rebox02 aft_blank" src="./img/campain_box.png" alt="박스">
+						<img class="box rebox03" src="./img/campain_box.png" alt="박스">
+					</div>
+					<img class="trees01" src="./img/campain_tree.png" alt="나무">
+					<img class="trees02" src="./img/campain_tree.png" alt="나무">
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<!-- 푸터 -->
+	<footer>
+		<article class="company_info inner_box">
+			<h2 class="hdd">메인 푸터 메뉴</h2>
+			<!-- 메인 푸터 메뉴 -->
+			<div class="ft_main align_flex aft_barline">
+				<h2 class="ft_tit">the35mm</h2>
+				<div class="ft_menu">
+					<ul class="ft_menu_list">
+						<li class="aft_blank"><a href="#">about</a></li>
+						<li class="aft_blank"><a href="#">공지사항</a></li>
+						<li class="aft_blank"><a href="#">이용안내</a></li>
+						<li class="aft_blank"><a href="#">이용약관</a></li>
+						<li class="aft_blank"><a href="#">개인정보방침</a></li>
+						<li class="aft_blank"><a href="#">채용안내</a></li>
+						<li><a href="#">입점/제휴 문의</a></li>
+					</ul>
+				</div>
+
+				<!-- 푸터 정보고지 리스트 -->
+				<div class="info_list">
+					<ul class="comp_info flow_up">
+						<li class="aft_blank">COMPANY:더35미리(the35mm)</li>
+						<li class="aft_blank">대구광역시 중구 공평로 85 2층</li>
+						<li class="aft_blank">fax:053-252-6059</li>
+						<li class="aft_blank">E-mail:ilove@the35mm.com</li>
+						<li>OWNER:김건우</li>
+					</ul>
+					<ul class="comp_info flow_down">
+						<li class="aft_blank">사업자등록번호:514-22-43102</li>
+						<li class="aft_blank">통신판매업 신고:제 2008-대구중구-1818</li>
+						<li class="aft_blank">HOSTING:심플렉스(주)</li>
+						<li>PRIVACY MANAGER:김건우</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 개인결제 안내 -->
+			<div class="ps_account align_flex aft_barline">
+				<h3 class="ft_tit_sub">BANK ACCOUNT</h3>
+				<p class="account ibk">기업 <span class="acc_num">153-073927-01-065</span></p>
+				<p class="account shinhan">신한 <span class="acc_num">110-501-640505</span></p>
+				<p class="acc_name">예금주 : 김건우</p>
+			</div>
+
+			<!-- 고객센터 안내 -->
+			<div class="help_desk align_flex">
+				<h3 class="ft_tit_sub">HELP DESK</h3>
+				<p class="help_num">070.8672.0747</p>
+				<p class="help_time">mon-fri / pm1-5 / sat,sun,holiday off</p>
+			</div>
+			
+		</article>
+		<article class="copyright">
+			<h2 class="hdd">카피라이트</h2>
+			<div class="inner_box">
+				<p class="copy">COPYRIGHT(C) THE35MM ALL RIGHT RESERVED.<span class="info_chek"><a href="#">사업자 정보 확인</a></span></p>
+
+			</div>
+		</article>
+	</footer>
+
+	<!-- 퀵메뉴 -->
+	<div class="quick">
+		<ul class="quick_menu">
+			<li class="qu_flex_100 bt_blnk"><img src="./img/quick_icon_film.png" alt="필름현상"><a href="#">현상스캔</a></li>
+			<li class="qu_flex_50 aft_blank bt_blnk"><img src="./img/quick_icon_repair.png" alt="수리"><a href="#">수리점검</a></li>
+			<li class="qu_flex_50 bt_blnk"><img src="./img/quick_icon_camera.png" alt="카메라렌탈"><a href="#">렌탈신청</a></li>
+			<li class="qu_flex_50 aft_blank bt_blnk"><img src="./img/quick_icon_card.png" alt="개인결제"><a href="#">개인결제</a></li>
+			<li class="qu_flex_50 bt_blnk"><img src="./img/quick_icon_event.png" alt="이벤트"><a href="#">이벤트</a></li>
+			<li class="qu_flex_100 bt_blnk"><img src="./img/quick_icon_info.png" alt="헬프데스크"><a href="#">헬프데스크</a></li>
+			<li class="qu_flex_100"><img src="./img/" alt=""><a href="#">TOP</a></li>
+		</ul>
+	</div>
+	<script></script>
+</body>
+</html>
