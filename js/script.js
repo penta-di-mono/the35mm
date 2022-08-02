@@ -35,8 +35,7 @@ $(document).ready(function(){
 
 	});
 	
-	
-	//메인이미지
+	//반응형에 따른 메인이미지
 	$(window).on('resize', function(){
 		var $winW = $(window).width();
 
@@ -52,6 +51,7 @@ $(document).ready(function(){
 		}
 	});
 
+	//반응형에 따른 이미지 슬라이드
 	winSize();
 	function winSize(){
 		var $winW = $(window).width();
@@ -87,7 +87,6 @@ $(document).ready(function(){
 		}
 	}
 
-
 	//퀵메뉴
 	$('div.quick').smoothScroll();
 
@@ -97,11 +96,11 @@ $(document).ready(function(){
 		$('div.quick').removeClass('hide');
 	}
 
-	// $(window).scroll(function(){
-	// 	if($(document).scrollTop() < 500){
-	// 		$('div.quick').addClass('hide');
-	// 	}else{
-	// 		$('div.quick').removeClass('hide');
-	// 	}
-	// });
+	$(window).scroll(function(){
+		if($(document).scrollTop() < 500){
+			$('div.quick').addClass('hide');
+		}else{
+			$('div.quick').removeClass('hide');
+		}
+	});
 });

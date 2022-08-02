@@ -445,19 +445,16 @@ section#sec03 div.list_frame div.film_list_bg {
 	margin-top: 75px;
 	background-image: url('../img/back_pattern.png');
 	background-repeat: repeat;
-	position: relative;
 }
 section#sec03 div.list_frame div.film_list_bg ul.film_list {
 	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
+	height: 100%;
+	position: relative;
 }
 section#sec03 div.list_frame div.film_list_bg ul.film_list li {
 	width: 840px;
 	height: 650px;
-	float: left;
-	position: relative;
+	position: absolute;
 }
 div.film_list_bg ul.film_list li a{
 	display: block;
