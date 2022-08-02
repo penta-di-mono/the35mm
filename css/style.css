@@ -11,7 +11,7 @@ header {
 	z-index: 5;
 }
 header div.header_wrap h1.logo {
-	width: 1000px;
+	width: 52%;
 	height: 50px;
 	background-image: url('../img/main_logo.png');
 	background-repeat: no-repeat;
@@ -59,7 +59,7 @@ header div.header_wrap div.user_menu li a{
 }
 
 header div.header_wrap div.user_srch {
-	width: 400px;
+	width: 28%;
 	height: 55px;
 	float: right;
 	text-align: right;
@@ -201,6 +201,12 @@ div.mb_nav_btn span.ham_fir {
 	margin-top: 0;
 }
 
+header nav.pc_nav {
+	display: none;
+}
+header nav.pc_nav.on {
+	display: block;
+}
 
 
 /*메인 이미지 슬라이드*/
@@ -211,49 +217,59 @@ main section#mainImg {
 	top: 0;
 	left: 0;
 }
-main section#mainImg div.img_frm {
+div.img_frm {
 	width: 100%;
 	height: 100%;
+}
+div.img_frm ul.img_list {
+	height: 100%;
+	display: none;
+}
+div.img_frm ul.img_list.on {
+	display: block;
 	overflow: hidden;
 }
-main section#mainImg div.img_frm ul.img_list {
-	height: 100%;
-}
-main section#mainImg div.img_frm ul.img_list li {
+div.img_frm ul.img_list li {
+	width: 100%;
 	height: 700px;
-	float: left;
 	overflow: hidden;
 	text-align: center;
+	float: left;
 }
-
-main section#mainImg ul.indicator {
+div.img_frm ul.img_list li img {
+	width: initial;
+}
+ul.indicator {
 	position: absolute;
 	left: 50%;
 	bottom: 30px;
 	width: 140px;
 	margin: 0 auto;
-	z-index: 7;
+	z-index: 5;
+	display: none;
 }
-main section#mainImg ul.indicator li {
+ul.indicator.on {
+	display: block;
+}
+ul.indicator li {
 	width: 12px;
 	height: 12px;
 	float: left;
 	border-radius: 50%;
 	overflow: hidden;
 }
-main section#mainImg ul.indicator li.aft_blank {
+ul.indicator li.aft_blank {
 	margin-right: 13px;
 }
-main section#mainImg ul.indicator li.on a{
+ul.indicator li.on a{
 	background-color: rgba(255, 255, 255, .9);
 }
-main section#mainImg ul.indicator li a {
+ul.indicator li a {
 	display: block;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255, 255, 255, .6);
+	background-color: rgba(255, 255, 255, .4);
 }
-
 
 section#sec01 {
 	width: 100%;
