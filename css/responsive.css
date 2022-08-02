@@ -4,15 +4,15 @@
 		width: 100%;
 		margin: 0 auto;
 	}
-	header div.header_wrap h1.logo span {
-		display: none;
+	header div.header_wrap h1.logo {
+		width: 62%;
 	}
 	header div.header_wrap div.user_menu {
-		width: 30%;
+		width: 35%;
 		height: 30px;
 		position: absolute;
 		top: 3em;
-		right: 5em;
+		right: 0;
 		padding-top: 0;
 		display: block;
 		z-index: 12;
@@ -23,30 +23,30 @@
 		position: absolute;
 	    width: 32%;
 	    height: 2em;
-	    float: left;
+	    float: none;
 	    padding-top: 0;
 	    padding-left: 0;
 	    box-sizing: border-box;
 		top: 0;
-		left: 1em;
+		right: 13rem;
 	}
 	header div.header_wrap div.user_menu div.aside_set {
-		width: 52%;
+		width: 48%;
 		height: 2em;
-		float: right;
+		float: none;
 		padding: 0 0 0 0;
 		padding-top: 0;
 		text-align: right;
 		position: absolute;
 		top: 0;
-		right: 1em;
+		right: 2rem;
 	}
 	header div.header_wrap div.user_srch {
-		width: 32%;
+		width: 30%;
 		height: 55px;
 		float: right;
 		text-align: right;
-		margin-right: 5em;
+		margin-right: 2em;
 		margin-top: 4em;
 	}
 }
@@ -63,12 +63,15 @@
 	header {
 		width: 100%;
 		background-color: rgba(10, 10, 10, 0.75);
-		overflow: hidden;
+		/* overflow: hidden; */
+	}
+	header div.header_wrap {
+		height: 120px;
 	}
 	header div.header_wrap h1.logo {
 		width: 50%;
 		background-size: 200px;
-		margin: 25px 0 0 70px;
+		margin: 25px 0 0 40px;
 		box-sizing: border-box;
 	}
 	header div.header_wrap h1.logo span {
@@ -78,17 +81,21 @@
 		text-align: left;
 		font-size: .5em;
 	}
-	header div.header_wrap {
-		height: 100%;
-	}
 	header div.header_wrap div.user_menu {
-		width: 35%;
+		width: 300px;
 		padding-top: 33px;
+		position: relative;
 	}
 	header div.header_wrap div.user_menu ul.user_joinus {
 		position: absolute;
-		top: 117px;
-		right: -175px;
+	    width: 32%;
+	    height: 2em;
+	    float: none;
+	    padding-top: 0;
+	    padding-left: 0;
+	    box-sizing: border-box;
+		top: 150px;
+		right: 22em;
 		z-index: 12;
 	}
 	header div.header_wrap div.user_menu ul.user_joinus li.aft_bar:after {
@@ -98,15 +105,22 @@
 		color: #333;
 	}
 	header div.header_wrap div.user_menu div.aside_set {
-		width: 100%;
+		width: 80%;
 		height: 80px;
 		padding: 0;
-		padding-top: 40px;
+		position: absolute;
+		top: 150px;
+		right: 5rem;
+		z-index: 12;
+		float: left;
 	}
 	header div.header_wrap div.user_menu div.aside_set ul.user_mypage {
 		height: 50px;
 		float: right;
-		margin-right:80px;
+		/* margin-right:80px; */
+	}
+	header div.header_wrap div.user_menu div.aside_set ul.user_mypage li a{
+		color: #333;
 	}
 	header div.header_wrap div.user_srch {
 		position: absolute;
@@ -164,7 +178,7 @@
 		position: absolute;
 		top: 120px;
 		right: 0;
-		z-index: 7;
+		z-index: 10;
 		box-sizing: border-box;
 		padding-top: 10px;
 	}
@@ -227,7 +241,7 @@
 		display: none;
 	}
 
-	/*섹션별 라인 없애기*/
+	/*섹션별 타이틀 라인 없애기*/
 	div.title div.tit_left {
 		width: 100%;
 		text-align: left;
@@ -676,7 +690,6 @@
 		right: 0;
 		top: 10px;
 	}
-
 	div.quick {display: none;}
 }
 
@@ -688,12 +701,16 @@
 	.offTbnav {display: none;}
 
 	header {
+		height: 128px;
 		position: static;
 		background-color: rgba(10, 10, 10, 1);
 	}
+	header div.header_wrap {
+		height: 120px;
+	}
 	header div.header_wrap h1.logo {
 		width: 100%;		
-		height: 100%;
+		height: 140px;
 		background-size: 5.8em;
 		background-position: center;
 		margin: 0;
@@ -702,11 +719,10 @@
 	header div.header_wrap h1.logo span {
 		display: none;
 	}
-	header div.header_wrap {height: 100%;}
 	header div.header_wrap div.user_menu {
 		width: 100%;
 		position: absolute;
-		top: 14.5em;
+		top: 27.5em;
 		left: 0;
 		padding-top: 0;
 		display: block;
@@ -730,7 +746,7 @@
 		color: #333;
 	}
 	header div.header_wrap div.user_menu div.aside_set {
-		width: 40%;
+		width: 48%;
 		height: 2em;
 		float: right;
 		padding: 0 0 0 0;
@@ -748,7 +764,7 @@
 	}
 	header div.header_wrap div.user_srch {
 		position: absolute;
-		top: 7.75em;
+		top: 128px;
 		right: 0;
 		z-index: 8;
 		left: 0;
@@ -768,7 +784,7 @@
 	.mb_nav_btn{
 		display: block;
 		position: absolute;
-		top: 8.3em;
+		top: 8.5em;
 		right: 1.5em;
 		z-index: 10;
 	}
@@ -782,7 +798,7 @@
 		width: 24px;
 		height: 24px;
 		position: absolute;
-		top: 22.4em;
+		top: 20.5em;
 		right: 25px;
 		z-index: 12;
 	}
@@ -793,6 +809,9 @@
 	}
 
 	/*네비게이션*/
+	header nav {
+		height: 60px;
+	}
 	header nav.pc_nav.mb_mode {
 		position: fixed;
 		top: 0;
@@ -800,13 +819,13 @@
 		z-index: 7;
 	}
 	header nav.pc_nav ul.main_menu {display: none;}
-	nav.tb_nav {
+	header nav.tb_nav {
 		display: block;
 		width: 100%;
-		height: 15em;
+		height: 16em;
 		background-color: #8ed3c7;
 		position: relative;
-		top: 0;
+		top: -60px;
 		right: 0;
 		z-index: 7;
 		box-sizing: border-box;
@@ -894,8 +913,6 @@
 	div.img_frm ul.img_list li img {
 		width: 100%;
 	}
-	
-
 
 	section#sec01,section#sec02,section#sec03,section#sec04 {
 		margin-bottom: 3em;

@@ -16,12 +16,26 @@ $(document).ready(function(){
 	$('li.sub_dep2').on('mouseout',function(){
 		$(this).children('ul').stop().slideUp();
 	});
-
+	
 	$('.mb_nav_btn').on('click', function(){
-		$('nav.pc_nav').removeClass('on')
-		$('nav.tb_nav').removeClass('offTbnav');
-	})
+		var $winW = $(window).width();
+	
+		if($winW < 1025){
+			$('.user_joinus').removeClass('offTbnav');
+			$('.aside_set').removeClass('offTbnav');
+			$('.closepop').removeClass('offTbnav');
+			$('.tb_nav.forTb').removeClass('offTbnav');
+		}
+	});
+	$('.closepop').on('click', function(){
+		$('.tb_nav').addClass('offTbnav');
+		$('.user_joinus').addClass('offTbnav');
+		$('.aside_set').addClass('offTbnav');
+		$('.closepop').addClass('offTbnav');
 
+	});
+	
+	
 	//메인이미지
 	$(window).on('resize', function(){
 		var $winW = $(window).width();
@@ -83,11 +97,11 @@ $(document).ready(function(){
 		$('div.quick').removeClass('hide');
 	}
 
-	$(window).scroll(function(){
-		if($(document).scrollTop() < 500){
-			$('div.quick').addClass('hide');
-		}else{
-			$('div.quick').removeClass('hide');
-		}
-	});
+	// $(window).scroll(function(){
+	// 	if($(document).scrollTop() < 500){
+	// 		$('div.quick').addClass('hide');
+	// 	}else{
+	// 		$('div.quick').removeClass('hide');
+	// 	}
+	// });
 });
